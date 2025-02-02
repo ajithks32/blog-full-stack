@@ -1,0 +1,58 @@
+.add-post-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .add-post-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .post-form-container {
+    width: 60%; /* Adjust the width of the form */
+  }
+  
+  .right-content {
+    width: 35%; /* Adjust the width of the right content */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .right-content h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .right-content p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .right-content ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .right-content ul li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .add-post-content {
+      flex-direction: column; /* Stack the content for smaller screens */
+    }
+  
+    .post-form-container, .right-content {
+      width: 100%; /* Make them full width on smaller screens */
+    }
+  }
+  

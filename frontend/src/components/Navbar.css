@@ -1,0 +1,117 @@
+/* Navbar Styling */
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+    z-index: 1000; /* Ensures navbar stays on top of other elements */
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    backdrop-filter: blur(10px); /* Blur effect for modern look */
+}
+
+/* Navbar brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #333 !important; /* Darker text for contrast */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #007bff !important; /* Highlight color on hover */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: #333;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 25px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #007bff; /* Highlight background on hover */
+    color: #fff !important;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.navbar-nav .nav-link:active {
+    background-color: #0056b3; /* Darker shade when active */
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none; /* Remove default focus outline */
+}
+
+.navbar-toggler-icon {
+    background-color: red !important; /* Dark color for the toggler icon */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #007bff; /* Highlight color on hover */
+}
+
+/* Mobile View */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px;
+        margin: 5px 0;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .navbar-toggler {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+/* Fixed position for the navbar */
+.position-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps the navbar above the content */
+}
+
+/* Add padding-top to the body to avoid content overlap with fixed navbar */
+body {
+    padding-top: 80px; /* Adjust based on the navbar height */
+}

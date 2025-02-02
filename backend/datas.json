@@ -1,0 +1,30 @@
+[
+    {
+      "title": "The Future of Web Development",
+      "content": "Web development is evolving rapidly with new technologies like AI, Web3, and serverless computing...",
+      "category": "Technology",
+      "author": "John Doe",
+      "image": "https://example.com/images/webdev.jpg",
+      "createdAt": "2025-01-29T10:15:00Z",
+      "updatedAt": "2025-01-29T10:15:00Z"
+    },
+    {
+      "title": "How to Learn JavaScript in 2025",
+      "content": "JavaScript remains the most popular language for web development. Here are the best resources for learning it...",
+      "category": "Education",
+      "author": "Jane Smith",
+      "image": "https://example.com/images/javascript.jpg",
+      "createdAt": "2025-01-29T09:45:00Z",
+      "updatedAt": "2025-01-29T09:45:00Z"
+    },
+    {
+      "title": "The Rise of No-Code Development",
+      "content": "No-code and low-code platforms are enabling businesses to create apps without deep coding knowledge...",
+      "category": "Business",
+      "author": "Alice Johnson",
+      "image": "https://example.com/images/nocode.jpg",
+      "createdAt": "2025-01-28T18:30:00Z",
+      "updatedAt": "2025-01-28T18:30:00Z"
+    }
+  ]
+  
