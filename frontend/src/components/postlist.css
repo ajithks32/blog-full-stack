@@ -1,0 +1,141 @@
+/* Container styling */
+
+/* Adjusting Post items layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+ /* Consistent gap between cards */
+}
+
+/* Search and Sort controls spacing with modern design */
+.search {
+  margin-bottom: 40px;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Space between search and sort */
+}
+
+.search input,
+.search select {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  color: white; /* White text */
+  padding: 10px 20px;
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+.search input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Semi-transparent placeholder */
+}
+
+.search input:focus,
+.search select:focus {
+  background-color: rgba(255, 255, 255, 0.2); /* Brighter on focus */
+  outline: none;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on focus */
+}
+
+.search select option {
+  color: black; /* Black text for options */
+}
+
+.search input:hover,
+.search select:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Card styling */
+.card {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 400px; /* Fixed height for all cards */
+  background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Gradient background */
+  border-radius: 20px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 8px 8px 16px #d9d9d9, -8px -8px 16px #ffffff; /* Neumorphic shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 12px 12px 24px #d9d9d9, -12px -12px 24px #ffffff; /* Stronger shadow on hover */
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 150px; /* Fixed image height */
+  width: 100%;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600; /* Semi-bold title */
+  color: #2c3e50; /* Dark blue-gray for title */
+  height: 40px; /* Fixed height for title area */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-text {
+  flex-grow: 1;
+  max-height: 100px;
+  overflow: auto;
+  color: #555; /* Slightly lighter text for content */
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+}
+
+/* Load More Button */
+.text-center button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px; /* Rounded corners */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+.text-center button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Responsive Layout */
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 1 1 25%; /* 4 cards per row */
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .col-md-4 {
+    flex: 1 1 48%; /* 2 cards per row */
+  }
+}
+
+@media (max-width: 767px) {
+  .col-md-4 {
+    flex: 1 1 100%; /* 1 card per row */
+  }
+}

@@ -1,0 +1,105 @@
+.post-form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.post-form-container {
+  max-width: 800px; /* Increased max-width for two columns */
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.post-form-container h3 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-fields-container {
+  display: flex;
+  gap: 20px; /* Space between left and right fields */
+}
+
+.left-fields,
+.right-fields {
+  flex: 1; /* Both sides take equal space */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-field textarea {
+  resize: vertical;
+  height: auto;
+}
+
+.form-field button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-field button:hover {
+  background-color: #0056b3;
+}
+
+.file-input {
+  margin-top: 5px;
+}
+
+.file-name {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive adjustments for mobile only */
+@media (max-width: 600px) {
+  .form-fields-container {
+    flex-direction: column; /* Stack fields in a single column on mobile */
+  }
+
+  .post-form-container {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .post-form-container h3 {
+    font-size: 20px;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    font-size: 16px;
+  }
+}
