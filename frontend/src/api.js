@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8000/api/posts";
+const API_URL = "https://blog-full-stack-final.onrender.com/api/posts";
 
 export const fetchPosts = async () => {
   try {
