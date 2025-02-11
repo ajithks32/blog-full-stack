@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_URL = "https://my-blog-7vtr.onrender.com";
+const API_URL = "http://localhost:8000/api/posts";
 
 // Async Thunks for API Calls
 export const fetchPosts = createAsyncThunk("posts/fetchPosts", async () => {
